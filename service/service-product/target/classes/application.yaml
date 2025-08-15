@@ -1,0 +1,20 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: service-product
+  profiles:
+    include: nacos
+
+
+---
+spring:
+  config:
+    import:
+      - nacos:order-dev.yaml?order-service
+      - nacos:product-dev.yaml?product-service
+    activate:
+      on-profile: dev
+
+

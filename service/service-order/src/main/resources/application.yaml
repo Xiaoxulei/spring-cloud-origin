@@ -1,0 +1,23 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: service-order
+  profiles:
+    include: nacos,feign
+#logging:
+#  level:
+#    com.xuxiaolei.feign: DEBUG
+#    feign: DEBUG
+#    feign.Logger: DEBUG
+---
+spring:
+  config:
+    import:
+      - nacos:order-dev.yaml?order-service
+      - nacos:product-dev.yaml?product-service
+    activate:
+      on-profile: dev
+
+

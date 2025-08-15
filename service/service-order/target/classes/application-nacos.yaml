@@ -1,0 +1,30 @@
+spring:
+  config:
+    import:
+      - nacos:service-product?public
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        namespace: public
+        group: DEFAULT_GROUP
+      config:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        namespace: public
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        refresh-enabled: true # 支持配置动态刷新
+        import-check:
+          enabled: false #禁用nacos配置
+nacos:
+  core:
+    auth:
+      enabled: true
+      token:
+        secret:
+          key: eTQlWDF1OSRUcSNvQTdyUHoyKldsOEBKZjYhZVZtM1E= # 和 Nacos 服务端一致
+
