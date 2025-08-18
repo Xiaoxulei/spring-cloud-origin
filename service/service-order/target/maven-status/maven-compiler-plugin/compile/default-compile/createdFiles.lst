@@ -1,0 +1,6 @@
+com\xuxiaolei\feign\ProductFeignClient.class
+com\xuxiaolei\ServiceOrderMainApplication.class
+com\xuxiaolei\controller\OrderController.class
+com\xuxiaolei\config\RestTemplateConfig.class
+com\xuxiaolei\service\ProductService.class
+com\xuxiaolei\config\OpenFeignConfig.class

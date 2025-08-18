@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
  **/
 @FeignClient("service-product")
 public interface ProductFeignClient {
-    @GetMapping("/test")
+    @GetMapping("/product/test")
     String test();
 }

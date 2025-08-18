@@ -16,7 +16,7 @@ public class SecurityFeignTest {
     private JwtUtils jwtUtils;
     @Test
     void test() {
-        String token = jwtUtils.generateToken("xuxiaolei");
+        String token = jwtUtils.generateToken("gateway-service");
         System.out.println("token = " + token);
 
     }

@@ -10,7 +10,7 @@ import java.util.Date;
 @Component
 public class JwtUtils {
 
-    private final String SECRET = "mySecretKeymySecretKeymySecretKeymySecretKeymySecretKey"; // JWT 秘钥，生产环境要安全存储
+    private final String SECRET = "xuxiaoleiJwtSecretKeyxuxiaoleiJwtSecretKeyxiaoxulei"; // JWT 秘钥，生产环境要安全存储
     private final long EXPIRATION_MS = 3600_000; // 1小时过期
 
     // 生成 JWT

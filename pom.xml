@@ -11,6 +11,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>service</module>
+        <module>common</module>
+        <module>test</module>
     </modules>
     <groupId>com.xuxiaolei</groupId>
     <artifactId>spring-cloud-origin</artifactId>

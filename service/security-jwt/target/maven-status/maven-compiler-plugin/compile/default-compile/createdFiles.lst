@@ -1,0 +1,8 @@
+com\xuxiaolei\security\config\FeignClientConfig.class
+com\xuxiaolei\security\config\SecurityConfig.class
+com\xuxiaolei\security\filter\JwtAuthenticationFilter.class
+com\xuxiaolei\security\controller\TestController.class
+com\xuxiaolei\security\utils\JwtUtils.class
+com\xuxiaolei\SecurityJwtMainApplication.class
+com\xuxiaolei\security\controller\AuthController.class
+com\xuxiaolei\security\feign\TargetServiceClient.class

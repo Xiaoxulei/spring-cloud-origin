@@ -13,6 +13,8 @@
         <module>service-product</module>
         <module>service-order</module>
         <module>security-jwt</module>
+        <module>auth-service</module>
+        <module>gateway-service</module>
     </modules>
 
     <artifactId>service</artifactId>
@@ -37,10 +39,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
