@@ -1,20 +1,31 @@
 spring:
   cloud:
     gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: "https://docs.spring.io"
+            allowed-methods:
+              - GET
       discovery:
         locator:
           enabled: true # 开启服务发现路由，自动识别 nacos 注册的服务
           lower-case-service-id: true
+#      default-filters:
+#        - StripPrefix=1
       routes:
         - id: order-route
           uri: lb://service-order
           predicates:
             - Path=/api/order/**
+            - Vip=user,xuxiaolei
+          filters:
+            - OnceToken=X-response-token,uuid
         - id: product-route
           uri: lb://service-product
           predicates:
             - Path=/api/product/**
-          filters:
-            - StripPrefix=1 # 去掉 /api
+
+
 
 
