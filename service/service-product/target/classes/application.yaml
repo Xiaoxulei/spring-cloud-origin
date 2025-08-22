@@ -6,7 +6,11 @@ spring:
     name: service-product
   profiles:
     include: nacos
-
+  datasource:
+    url: jdbc:mysql://localhost:3306/gulimall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: xuxiaolei
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 ---
 spring:

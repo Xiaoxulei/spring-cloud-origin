@@ -1,5 +1,6 @@
 package com.xuxiaolei.product.controller;
 
+import com.xuxiaolei.common.utils.R;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -22,7 +23,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String test(){
-        System.out.println("test = " + test);
+        System.out.println(R.ok(test));
         return test;
     }
 }
